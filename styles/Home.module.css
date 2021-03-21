@@ -1,0 +1,590 @@
+
+.Nav_Header_Service{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+}
+.Nav_Header_Service>.bg{
+    position: absolute;
+    background-color: #00215B;
+    z-index: -1;
+    top: 0;
+    height: 1800px;
+    width: 40%;
+}
+
+.Nav_Header_Service>.content{
+    width: 100%;
+}
+
+.Nav_Header_Service>.content>.header{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 518px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    position: relative;
+}
+
+.Nav_Header_Service>.content>.header>.dotes{
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    left: 0;
+    list-style: none;
+    display: flex;
+    margin-left: 48%;
+    padding-left: 0;
+}
+
+.Nav_Header_Service>.content>.header>.dotes>li{
+    font-size: 90px;
+    background: #00215B;
+    box-shadow: 2px 2px 10px #00215B;
+    padding: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Nav_Header_Service>.content>.header>.ImageHeader>.content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: 2s HeaderImage both;
+}
+
+
+.Nav_Header_Service>.content>.header>.ImageHeader>.content>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 84px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 1px black;
+}
+
+.Nav_Header_Service>.content>.header>.ImageHeader>.content>.goFor{
+    background: #F45905;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 9px;
+    padding-right: 9px;
+    color: white;
+    cursor: pointer;
+}
+
+.Nav_Header_Service>.content>.header>.ImageHeader>.content>.goFor>span{
+    margin-top: 10px;
+}
+
+.services{
+    margin-top: 80px;
+    display: flex;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-between;
+}
+
+.services>.left{
+    width: 30%;
+    margin-right: 30px;
+}
+
+.services>.left>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    
+    text-transform: uppercase;
+    margin-bottom: -20px;
+    color: #F45905;
+}
+
+.services>.left>.sousTitle{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    /* or 116% */
+    
+    color: #FFFFFF;
+}
+.services>.left>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    margin-top: -20px;
+    /* or 165% */
+    color: #D4D7DD;
+}
+.services>.left>.goFor{
+    background: #F45905;        
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 26px;
+    /* identical to box height, or 100% */
+    cursor: pointer;
+    text-align: center;
+    color: #FFFFFF;
+}
+.services>.right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+.ServiceComp{
+    width: 24vw;
+    max-width: 340px;
+    background: white;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px #c3c9e7;
+    overflow: hidden;
+}
+.ServiceComp>.image{
+    width: 22vw;
+    height: 230px;
+    transition: 1s;
+    transform-origin: all;
+}
+
+.ServiceComp>.image:hover{
+    transform: scale(1.07);
+}
+
+.ServiceComp>.content>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #00215B;
+}
+.ServiceComp>.content>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    color: #41444B;
+    margin-top: -10px;
+}
+
+.ServiceComp>.content>.lien{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    margin-top: -10px;
+    /* identical to box height, or 107% */
+    
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #001ED3;
+    cursor: pointer;
+}
+
+.Project{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.Project>li{
+    width: 33.3%;
+    height:350px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.Project>.top{
+    background: #F45905;
+}
+.Project>.bottom{
+    background: #00215B;
+}
+
+.Project>li>.image{
+    width: 100%;
+    height: 350px;
+    transition: 1s;
+    transform-origin: all;
+}
+
+.Project>li>.image:hover{
+    transform: scale(1.07);
+}
+
+.ProjectComp{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProjectComp>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    /* identical to box height, or 112% */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.ProjectComp>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 28px;
+    max-width: 220px;
+    /* or 165% */
+    
+    text-align: center;
+    
+    color: #EBECEE;
+}
+
+.ProjectComp>.goFor{
+    font-family: Font Awesome 5 Free;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 26px;
+    background: white;
+    cursor: pointer;
+    height: 30px;
+    margin-top: 10px;
+    width: 40px;
+
+    /* identical to box height, or 100% */
+    
+    text-align: center;
+    
+    color: #00215B;
+}
+
+.About{
+    display: flex;
+    margin-top: 0;
+    height: 450px;
+}
+.About>.left{
+    width: 50%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.About>.left>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    
+    text-transform: uppercase;
+    
+    color: #F45905;
+}
+.About>.left>.desc{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 64px;
+    /* or 116% */
+
+    color: #16213E;
+}
+.About>.left>.goFor{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    text-align: right;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    background: #F45905;
+    width: 120px;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor:pointer;
+}
+
+.About>.right{
+    width: 50%;
+}
+
+.team_{
+    position: relative;
+    margin-top: 50px;
+}
+.team_>.bg{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/home/teams/background.png");
+}
+.Team{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(243, 239, 239, 0.6);
+}
+
+.Team>.title{
+    margin-top: 50px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #F45905;
+}
+.Team>.sousTitle{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 64px;
+    /* identical to box height, or 116% */
+    
+    text-align: center;
+    
+    color: #16213E;
+}
+.Team>.Listteam{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.Team>.Listteam>li{
+    width: 24%;
+}
+
+.TeamCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.TeamCard>.image{
+    width: 80%;
+    height: 295px;
+    border-top: 4px solid #F45905;
+    transition: 1s;
+    transform-origin: all;
+}
+.TeamCard>.image:hover{
+    transform: scale(1.06);
+}
+.TeamCard>.Infos{
+    margin-top: -16px;
+}
+.TeamCard>.Infos>.SocialMedia{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+.TeamCard>.Infos>.SocialMedia>li{
+    background-color: #F45905;
+    cursor: pointer;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8);
+    padding: 18px;
+    border-radius: 9px;
+
+}
+.TeamCard>.Infos>.name{
+    font-family: Kanit;
+    font-style: normal;
+    margin-top: 3px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height, or 118% */
+    
+    text-align: center;
+    
+    color: #16213E;
+}
+.TeamCard>.Infos>.post{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    
+    text-align: center;
+    margin-top: -14px;
+    color: #00215B;
+}
+
+@media (max-width: 1103px){
+    .Nav_Header_Service>.content>.header{
+        margin-top: 30px;
+    }
+}
+@media (max-width:1016px){
+    .services{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
+@media (max-width:1010px){
+    .Team>.Listteam>li{
+        width : 50%;
+        margin-top: 40px;
+    }
+}
+
+/*972px*/
+@media (max-width: 770px){
+    .Nav_Header_Service>.content>.header{
+        margin-top: 30px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .services>.left{
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+        background: #00215B;
+    }
+    .services>.right{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 30px;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .ServiceComp{
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .ServiceComp>.image{
+        width: 100%;
+    }
+    .Nav_Header_Service>.bg{
+        height: 2800px;
+    }
+    .Project{
+        flex-direction: column;
+    }
+    .Project>li{
+        width: 100%;
+    }
+    .ProjectComp>.desc{
+        max-width: 80%;
+    }
+    .Project>.bottom,.Project>.top{
+        height: fit-content;
+        padding-bottom: 20px;
+    }
+    .About{
+        height: fit-content;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .About>.left{
+        width: 100%;
+        align-items: center;
+        padding-left: 0;
+    }
+    .About>.left>.title{
+        font-weight: 900;
+        font-size: 23px;
+    }
+    .About>.left>.desc{
+        text-align: center;
+        width: 80%;
+    }
+    .About>.left>.goFor{
+        width: 90%;
+        height: 40px;
+        font-size: 25px;
+        margin-top: 0;
+    }
+    .About>.right{
+        display: none;
+    }
+}
+
+@media (max-width:760px){
+    .Team>.Listteam>li{
+        width : 100%;
+        margin-top: 40px;
+    }
+}

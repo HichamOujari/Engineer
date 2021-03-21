@@ -1,0 +1,105 @@
+import React, { Component, useLayoutEffect } from 'react';
+import style from "../styles/nav_footer.module.css"
+import Link from "next/link"
+import Image from "next/image"
+import DropDown from "../component/outils/dropDown"
+
+import TwitterIcon from '@material-ui/icons/Twitter';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import YouTubeIcon from '@material-ui/icons/YouTube';
+import MenuIcon from '@material-ui/icons/Menu';
+
+export default class Nav extends Component {
+    navElements ={
+        service : [
+            {
+                title:"dropDown Service 1",
+                href:"/S1"
+            },{
+                title:"dropDown Service 1",
+                href:"/S1"
+            },{
+                title:"dropDown Service 1",
+                href:"/S1"
+            },{
+                title:"dropDown Service 1",
+                href:"/S1"
+            },{
+                title:"dropDown Service 1",
+                href:"/S1"
+            },{
+                title:"dropDown Service 1",
+                href:"/S1"
+            },
+        ],
+        pages: [
+            {
+                title:"dropDown pages 1",
+                href:"/S1"
+            },{
+                title:"dropDown pages 1",
+                href:"/S1"
+            },{
+                title:"dropDown pages 1",
+                href:"/S1"
+            },
+        ],
+        news:[
+            {
+                title:"dropDown news 1",
+                href:"/S1"
+            },{
+                title:"dropDown news 1",
+                href:"/S1"
+            },{
+                title:"dropDown news 1",
+                href:"/S1"
+            },
+        ],
+    }
+    state = {
+        logo:this.props.isHome===1?"/logoWhite.png":"/logoColor.png"
+    }
+    socialMedia = ()=>{
+        if(this.props.isHome===1){
+            return style.top,style.displayNnone
+        }
+        return style.top
+    }
+  render() {
+    
+    return (
+        <div className={style.Nav_}>
+            <div className={this.socialMedia()}>
+                <ul className={style.left}>
+                    <Link href="/support"><li>SUPPORT</li></Link>
+                    <Link href="/partners"><li>PARTNERS</li></Link>
+                    <Link href="/careers"><li>CAREERS</li></Link>
+                </ul>
+                <ul className={style.right}>
+                    <Link href="/twitter"><li><TwitterIcon/></li></Link>
+                    <Link href="/facebook"><li><FacebookIcon/></li></Link>
+                    <Link href="/linkedin"><li><LinkedInIcon/></li></Link>
+                    <Link href="/youtube"><li><YouTubeIcon/></li></Link>
+                </ul>
+            </div>
+            <div className={style.nav}>
+                <Image className={style.logo} src={this.state.logo} width="103" height="28" />
+                <ul id="NavBarElement" className={style.navBar}>
+                    <Link href="/"><li><h3>Home</h3></li></Link>
+                    <Link href="/services"><li><DropDown title="Services" data={this.navElements.service} /></li></Link>
+                    <Link href="/pages"><li><DropDown title="Pages" data={this.navElements.pages} /></li></Link>
+                    <Link href="/news"><li><DropDown title="News" data={this.navElements.news} /></li></Link>
+                    <Link href="/contacts"><li><h3>Contacts</h3></li></Link>
+                </ul>
+                <label className={style.IconMenu} htmlFor="CHeckMenu"><MenuIcon/></label>
+                <input hidden type="checkbox" onChange={()=>{
+                    var menu = document.getElementById("NavBarElement")
+                    menu.style.display=menu.style.display=="flex"?"none":"flex";
+                }} id="CHeckMenu"/>
+            </div>
+        </div>
+    );
+  }
+}

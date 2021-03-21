@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+.Nav_{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.Nav_>.top{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D4D7DD;
+    align-items: center;
+}
+.Nav_>.top>.left{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.Nav_>.top>.left>li{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    margin-right: 10px;
+    text-transform: uppercase;
+    
+    color: #41444B;
+}
+
+.displayNnone{
+    display: none;
+}
+
+.Nav_>.top>.right{
+    list-style: none;
+    display: flex;
+}
+.Nav_>.top>.right>li{
+    color: #1e4b9b;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    z-index: 2;
+}
+
+.navBar>li{
+    margin-right: 30px;
+    cursor: pointer;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 10px;
+    color: #00215B;
+    padding-top: 0;
+    border-top: 4px solid transparent;
+}
+.navBar>li:hover{
+    border-top: 4px solid #F45905;
+}
+.Elements{
+    list-style: none;
+    margin-top: -13px;
+    position: relative;
+    padding-bottom: 5px;
+}
+.Elements>h3{
+    
+}
+.Elements>h3>.icon{
+    transform: scale(1.4);
+    padding-top: 10px;
+}
+.Elements:hover .DropDown{
+    display: flex;
+}
+.DropDown:hover{
+    display: flex;
+}
+.DropDown{
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    position: absolute;
+    left: 0px;
+    top: 45px;
+    justify-content: center;
+    align-items: center;
+    
+    background: white;
+    border-top: 4px solid #00215B;
+    padding-left: 0;
+}
+
+.DropDown>li{
+    width: max-content;
+    line-height: 40px;
+    text-transform: capitalize;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #083075;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.DropDown>li:hover{
+    color: #F45905;
+}
+
+.IconMenu{
+    display: none;
+    color: #F45905;
+    background: white;
+    transform: scale(1.4);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 1103px){
+    .navBar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background: white;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        border-top: 4px solid #00215B;
+        padding-top: 10px;
+    }
+    .navBar>li{
+        margin-top: -10px;
+    }
+    .Elements{
+        margin-top: 0;
+    }
+    .navBar>li:hover{
+        border-top: 1px solid transparent;
+        color: #F45905;
+    }
+    .nav{
+        margin-top: 33px;
+    }
+    .Elements>h3{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Elements>h3>.icon{
+        margin-right: 20px;
+    }
+    .IconMenu{
+        display: flex;
+    }
+    .DropDown{
+        position: inherit;
+        margin-top: -45px;
+        margin-bottom: 40px;
+        align-items: flex-start;
+    }
+}
