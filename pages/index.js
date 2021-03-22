@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import style from '../styles/Home.module.css'
 import Nav from "../component/nav"
-import Footer from "../component/footer"
 import Header from "../component/home/header"
 import Service from "../component/home/service"
 import Project from "../component/home/project"
 import About from "../component/home/about"
 import Team from "../component/home/team"
+import Contact from "../component/home/contact"
+import Maps from "../component/home/maps"
+import Testimonials from "../component/home/testimonials"
+import HomeFooter from "../component/home/homeFooter"
 export default function Home() {
   const headerData = [
     {
@@ -92,6 +95,66 @@ export default function Home() {
       image:"/home/teams/1.png"
     },
   ]
+  const contact = {
+    infos:{
+      location: "Themeforest, Envato HQ 24 Fifth st., Los Angeles, USA",
+      email:["dustro@gmail.com","dustro.info@gmail.com"],
+      num:"+ 1 634 7638 654",
+      twitter:"htpps://twitter.com",
+      fb:"http://facebook.com",
+      linkedin:"https://linkedin.com",
+      youtube:"http://youtube.com"
+    },
+    services:["Service 1","Service 2","Service 3","Service 4"]
+  }
+  const TestimonialsInfos = [
+    {
+      desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
+      name:"Katy Grey ",
+      post:"CEO Grey Industries"
+    },{
+      desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
+      name:"Katy Grey ",
+      post:"CEO Grey Industries"
+    },{
+      desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
+      name:"Katy Grey ",
+      post:"CEO Grey Industries"
+    }
+  ]
+  const MapsData = {
+    center: {
+      lat: 59.95,
+      lng: 30.33
+    },
+    zoom: 11
+  }
+  const FotterInfo={
+    desc : "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus risus nunc, ultrices sed aliquet sodales, eleifend at est. Orci varius natoque",
+    News:[
+      {
+        title:"Agile Construction Management Building",
+        date:"20 Nov 2020",
+        by:"Oujari Hicham",
+        image:"/home/teams/1.png"
+      },{
+        title:"Agile Construction Management Building",
+        date:"20 Nov 2020",
+        by:"Oujari Hicham",
+        image:"/home/teams/1.png"
+      },{
+        title:"Agile Construction Management Building",
+        date:"20 Nov 2020",
+        by:"Oujari Hicham",
+        image:"/home/teams/1.png"
+      },{
+        title:"Agile Construction Management Building",
+        date:"20 Nov 2020",
+        by:"Oujari Hicham",
+        image:"/home/teams/1.png"
+      },
+    ]
+  }
   return (
     <div>
       <Head>
@@ -107,9 +170,12 @@ export default function Home() {
           <Project data={projects}/>
           <About />
           <Team data={teams}/>
+          <Contact data={contact} />
+          <Maps data={MapsData}/>
+          <Testimonials data={TestimonialsInfos}/>
+          <HomeFooter data={FotterInfo}/>
         </div>
       </div>
-      <Footer />
     </div>
   )
 }

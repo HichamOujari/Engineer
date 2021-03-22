@@ -1,0 +1,478 @@
+.HeaderAbout{
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    border: 1px solid transparent;
+    margin-top: 10px;
+}
+.HeaderAbout>.Image{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.HeaderAbout>.Content{
+    background: rgba(245, 241, 241, 0.4);
+    height: 100%;
+    width: 100%;
+    border: 1px solid transparent;
+}
+.HeaderAbout>.Content>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 84px;
+    width: 70%;
+    text-align: center;
+    /* identical to box height, or 105% */
+    color: #16213E;
+
+}
+.HeaderAbout>.Content>.sousTitle{
+    font-family: Lato;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    line-height: 28px;
+    /* identical to box height, or 165% */
+    color: #41444B;
+    margin-left: 25%;
+    margin-top: -40px;
+}
+
+.HeaderAbout>.Num{
+    position: absolute;
+    background: white;
+    border-top: 4px solid #F45905;
+    bottom: 0;
+    right: 10%;
+    width: 25%;
+    min-width: 300px;
+    padding-left: 50px;
+    transform: translate(0,30px);
+    box-shadow: 2px 2px 10px rgb(195, 195, 233);
+}
+.HeaderAbout>.Num>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    text-transform: uppercase;
+    color: #41444B;
+}
+.HeaderAbout>.Num>.main{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+
+    /* identical to box height, or 120% */
+    color: #00215B;
+}
+
+.AboutMain{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+
+}
+.AboutMain>.left{
+    position: relative;
+    width: 30%;
+    margin-right: 30px;
+    height: 400px;
+}
+.AboutMain>.left>.Image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.AboutMain>.left>.BlocCount{
+    width: 60%;
+    background: #00215B;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.AboutMain>.left>.BlocCount>.count{    
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 64px;
+    /* identical to box height, or 116% */
+    color: #FFFFFF;
+    margin-top: 6px;
+}
+.AboutMain>.left>.BlocCount>.sousTitle{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    /* identical to box height, or 144% */
+    text-align: center;
+    margin-top: -39px;
+    color: #EBECEE;
+}
+
+.AboutMain>.right{
+    width: 60%;
+}
+.AboutMain>.right>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    margin-top: -5px;
+    text-transform: uppercase;
+    color: #F45905;
+
+}
+.AboutMain>.right>.sousTitle{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 64px;
+    /* or 116% */
+    margin-top: 20px;
+    color: #16213E;
+}
+
+.AboutMain>.right>.quote{
+    display: flex;
+    justify-content: space-evenly;
+    border-left: 4px solid #00215B;
+    background: #F6F6F6;
+}
+
+.AboutMain>.right>.quote>.ImageQuoter{
+    width: 30%;
+
+}
+.AboutMain>.right>.quote>.Content{
+    
+    margin-left: 20px;
+}
+.AboutMain>.right>.quote>.Content>.main{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    color: #41444B;
+    
+}
+.AboutMain>.right>.quote>.Content>.WHO{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    line-height: 28px;
+    /* identical to box height, or 165% */
+    color: #00215B;
+    
+}
+.AboutMain>.right>.qoute>.Content>.WHO>span{
+    font-weight: 600;
+}
+.AboutMain>.right>.SousDesc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    color: #41444B;
+}
+.AboutMain>.right>.goFor{
+    width: 300px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.Banner{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+.Banner>.content{
+    width: 100%;
+}
+.Banner>.content>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 34px;
+    line-height: 38px;
+    /* identical to box height, or 112% */
+    text-align: center;
+    color: #EBECEE;
+    
+}
+.Banner>.content>.sousTitle{        
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    /* identical to box height, or 116% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.Banner>.content>.quote{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.Banner>.content>.goFor{
+    display: flex;
+    justify-content: space-evenly;
+    background: #F45905;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+
+.Banner>.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.Banner>.Services{
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: auto;
+    display: flex;
+}
+.Banner>.Services>.Service{
+    display: flex;
+    background: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+.Banner>.Services>.Service>.left{
+    background-color: #F45905;
+}
+.Banner>.Services>.Service>.right{
+    
+}
+.Banner>.Services>.Service>.right>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 144% */
+    color: #00215B;
+}
+
+.Banner>.Services>.Service>.right>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    color: #41444B;   
+}
+
+.Contact_Skills{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.Contact_Skills>.left{
+    width: 50%;
+    padding-top: 40px;
+    padding-left: 5%;
+    margin-bottom: 80px;
+}
+.Contact_Skills>.left>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #F45905;
+}
+.Contact_Skills>.left>.sousTitle{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 64px;
+    /* identical to box height, or 116% */
+    color: #16213E;
+    margin-top: 20px;
+    font-weight: 900;
+}
+.Contact_Skills>.left>.form{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+}
+.Contact_Skills>.left>.form>input,.Contact_Skills>.left>.form>select{
+    width: 45%;
+    height: 50px;
+    padding: 10px;
+    font-family: Kanit;
+    font-style: italic;
+    margin-right: 10px;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    color: #41444B;
+    background: #FFFFFF;
+    border: 1px solid #D4D7DD;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.Contact_Skills>.left>.form>textarea{
+    height: 100px;
+    padding: 10px;
+    width: Calc(90% + 10px);
+    font-family: Kanit;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    color: #41444B;
+    background: #FFFFFF;
+    border: 1px solid #D4D7DD;
+    box-sizing: border-box;
+}
+.Contact_Skills>.left>.form>.Submit_check{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    margin-top: 20px;
+}
+.Contact_Skills>.left>.form>.Submit_check>button{
+    background: #F45905;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    margin-right: 20px;
+    line-height: 24px;
+    padding: 7px;
+    text-align: right;
+    cursor: pointer;
+    width: 200px;
+}
+.Contact_Skills>.left>.form>.Submit_check>button:hover{
+    background: #00215B;
+}
+.Contact_Skills>.left>.form>.Submit_check>.Check{
+    font-family: Kanit;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    color: #41444B;
+    display: flex;
+    align-items: center;
+}
+.Contact_Skills>.right{
+    width: 50%;
+}
+
+.SkillsCard{
+    display: flex;
+    justify-content: space-evenly;
+}
+.SkillsCard>.left{
+
+}
+.SkillsCard>.right{
+    
+}
+.SkillsCard>.right>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    /* identical to box height, or 118% */
+    
+    
+    color: #00215B;
+}
+.SkillsCard>.right>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    
+    
+    color: #41444B;
+}
