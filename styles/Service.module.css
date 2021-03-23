@@ -490,7 +490,6 @@
 }
 .Single_Serv_Card>.front:hover{
     cursor: pointer;
-    animation: 2s RotationCard both;
 }
 .Single_Serv_Card>.front>.icon{
     border: 2px solid #00215B;
@@ -603,13 +602,3 @@
         height: 50vh;
     }
 }
-
-@keyframes RotationCard{
-    from {
-        transform: rotateX(0deg);
-    }
-    to {
-        transform: rotateX(360deg);
-        z-index: -1;
-    }
-  }
