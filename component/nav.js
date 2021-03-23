@@ -15,46 +15,31 @@ export default class Nav extends Component {
         service : [
             {
                 title:"dropDown Service 1",
-                href:"/S1"
+                href:"/services/single-service/S1"
             },{
                 title:"dropDown Service 1",
-                href:"/S1"
-            },{
-                title:"dropDown Service 1",
-                href:"/S1"
-            },{
-                title:"dropDown Service 1",
-                href:"/S1"
-            },{
-                title:"dropDown Service 1",
-                href:"/S1"
-            },{
-                title:"dropDown Service 1",
-                href:"/S1"
+                href:"/services/single-service/S1"
             },
         ],
         pages: [
             {
-                title:"dropDown pages 1",
-                href:"/S1"
+                title:"Projects List",
+                href:"/services/projects"
             },{
-                title:"dropDown pages 1",
-                href:"/S1"
-            },{
-                title:"dropDown pages 1",
-                href:"/S1"
+                title:"dropDown pages 2",
+                href:"/services/projects"
             },
         ],
         news:[
             {
                 title:"dropDown news 1",
-                href:"/S1"
+                href:"/news/S1"
             },{
                 title:"dropDown news 1",
-                href:"/S1"
+                href:"/news/S1"
             },{
                 title:"dropDown news 1",
-                href:"/S1"
+                href:"/news/S1"
             },
         ],
     }
@@ -91,7 +76,7 @@ export default class Nav extends Component {
                     <Link href="/services"><li><DropDown title="Services" data={this.navElements.service} /></li></Link>
                     <Link href="/pages"><li><DropDown title="Pages" data={this.navElements.pages} /></li></Link>
                     <Link href="/news"><li><DropDown title="News" data={this.navElements.news} /></li></Link>
-                    <Link href="/contacts"><li><h3>Contacts</h3></li></Link>
+                    <Link href="/about"><li><h3>Contacts</h3></li></Link>
                 </ul>
                 <label className={style.IconMenu} htmlFor="CHeckMenu"><MenuIcon/></label>
                 <input hidden type="checkbox" onChange={()=>{

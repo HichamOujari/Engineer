@@ -5,7 +5,8 @@ import Footer from "../component/footer"
 import AboutMain from "../component/About/aboutMain"
 import Banner from "../component/About/banner"
 import Contact_Skills from "../component/About/contact_Skills"
-
+import Gallery from "../component/About/gallery"
+import Company from "../component/About/company"
 export default function About() {
   const aboutMain = {
     yearsExperience : 25,
@@ -35,7 +36,12 @@ export default function About() {
       },
     ]
   }
-
+  const company = {
+    images:["/about/gallery/1.png","/about/gallery/1.png","/about/gallery/1.png","/about/gallery/1.png"],
+    title:"Develop your leaders into a competitive advantage",
+    desc:"Nunc a blandit urna. Aliquam dapibus pellentesque purus, porta luctus tortor porta ut. Fusce mattis lacus feugiat libero vulputate, nec fringilla felis ultricies. Proin neque libero, tempus sed nisi vel, suscipit maximus elit. Aenean pulvinar vestibulum porttitor",
+    lien:"/company"
+  }
   const skills = [
     {
       title:"High Quality Build",
@@ -51,6 +57,8 @@ export default function About() {
       icon:"/about/icons/tourn.png"
     },
   ]
+  const gallery = ["/about/gallery/1.png","/about/gallery/2.png","/about/gallery/1.png","/about/gallery/2.png","/about/gallery/1.png"]
+
   const services=["Service1","Service2","Service3","Service4"]
   return (
     <div>
@@ -73,6 +81,8 @@ export default function About() {
       <AboutMain  data={aboutMain} />
       <Banner data={banner}/>
       <Contact_Skills data={skills}  services={services}/>
+      <Gallery data={gallery} />
+      <Company data={company} />
       <Footer />
     </div>
   )

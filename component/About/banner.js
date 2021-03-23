@@ -13,7 +13,7 @@ export default class Banner extends Component {
               <p className={style.quote}>Pellentesque ex ex, suscipit et lectus at, mollis tempus ligula. Praesent sagittis eros orci, at sodales dolor rutrum</p>
               <Link href={this.props.data.lien}><p className={style.goFor}>Appointment <ArrowRightAltIcon /></p></Link>
           </div>
-          <img src={this.props.data.image} />
+          <img className={style.image} src={this.props.data.image} />
           <div className={style.Services}>
               <div className={style.Service}>
                   <p className={style.left}>01</p>
