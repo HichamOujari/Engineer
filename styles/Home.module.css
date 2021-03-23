@@ -51,6 +51,10 @@
     margin-right: 10px;
 }
 
+
+.Nav_Header_Service>.content>.header>.ImageHeader{
+    
+}
 .Nav_Header_Service>.content>.header>.ImageHeader>.content{
     position: absolute;
     top: 0;
@@ -61,6 +65,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: rgba(1, 4, 59, 0.3);
 }
 
 .Nav_Header_Service>.content>.header>.ImageHeader>.content>.title{

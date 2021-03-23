@@ -3,10 +3,15 @@ import Image from "next/image"
 import Link from "next/link"
 import style from "../../styles/Home.module.css"
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import AOS from "aos"
+
 export default class ImageHeader extends Component {
+  componentDidMount(){
+    AOS.init({duration:2000});
+  }
   render() {
     return (
-        <div className={style.ImageHeader} id={"HeaderImage"+this.props.index}>
+        <div data-aos="flip-in" className={style.ImageHeader} id={"HeaderImage"+this.props.index}>
             <Image src={this.props.data.image} layout='fill' className={style.Image} />
             <div className={style.content}>
                 <h3 className={style.title}>{this.props.data.title}</h3>

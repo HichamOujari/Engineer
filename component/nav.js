@@ -9,7 +9,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import MenuIcon from '@material-ui/icons/Menu';
-
+import AOS from "aos"
 export default class Nav extends Component {
     navElements ={
         service : [
@@ -52,26 +52,29 @@ export default class Nav extends Component {
         }
         return style.top
     }
+    componentDidMount(){
+        AOS.init({duration:2000});
+      }
   render() {
     
     return (
         <div className={style.Nav_}>
-            <div className={this.socialMedia()}>
-                <ul className={style.left}>
+            <div  data-aos="fade-down" className={this.socialMedia()}>
+                <ul data-aos="fade-up" className={style.left}>
                     <Link href="/support"><li>SUPPORT</li></Link>
                     <Link href="/partners"><li>PARTNERS</li></Link>
                     <Link href="/careers"><li>CAREERS</li></Link>
                 </ul>
-                <ul className={style.right}>
+                <ul data-aos="fade-in" className={style.right}>
                     <Link href="/twitter"><li><TwitterIcon/></li></Link>
                     <Link href="/facebook"><li><FacebookIcon/></li></Link>
                     <Link href="/linkedin"><li><LinkedInIcon/></li></Link>
                     <Link href="/youtube"><li><YouTubeIcon/></li></Link>
                 </ul>
             </div>
-            <div className={style.nav}>
-                <Image className={style.logo} src={this.state.logo} width="103" height="28" />
-                <ul id="NavBarElement" className={style.navBar}>
+            <div  className={style.nav}>
+                <Image data-aos="fade-up" className={style.logo} src={this.state.logo} width="103" height="28" />
+                <ul data-aos="fade-down"  id="NavBarElement" className={style.navBar}>
                     <Link href="/"><li><h3>Home</h3></li></Link>
                     <Link href="/services"><li><DropDown title="Services" data={this.navElements.service} /></li></Link>
                     <Link href="/pages"><li><DropDown title="Pages" data={this.navElements.pages} /></li></Link>

@@ -1,11 +1,14 @@
+import React,{Component} from "react"
 import Head from 'next/head'
-import style from '../../styles/Project.module.css'
+import style from '../../styles/Service.module.css'
 import Nav from "../../component/nav"
 import Footer from "../../component/footer"
 import ProjectMain from "../../component/Project/projectMain"
-export default function projects() {
+import AOS from "aos"
 
-  const listProjects = [
+export default class projects extends Component {
+
+  listProjects = [
     {
       image:"/service/listProject/1.png",
       title:"Institutional Design",
@@ -28,26 +31,31 @@ export default function projects() {
       lien:"/services/projects/1"
     }
   ]
-  return (
-    <div>
-      <Head>
-        <title>List Projects</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      </Head>
-      <Nav isHome={0}/>
-      <div className={style.HeaderProject}>
-        <img src="/about/header1.png" className={style.Image}/>
-        <div className={style.Content}>
-          <p className={style.title}>Projects List</p>
-          <p className={style.sousTitle}>Home / Services / Projects List</p>
+  componentDidMount(){
+    AOS.init({duration:2000});
+  }
+  render(){
+    return (
+      <div>
+        <Head>
+          <title>List Projects</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+        </Head>
+        <Nav isHome={0}/>
+        <div data-aos="fade-down" className={style.HeaderProject}>
+          <img data-aos="fade-up" src="/about/header1.png" className={style.Image}/>
+          <div data-aos="fade-down" className={style.Content}>
+            <p data-aos="fade-right" className={style.title}>Projects List</p>
+            <p data-aos="fade-down" className={style.sousTitle}>Home / Services / Projects List</p>
+          </div>
+          <div data-aos="fade-up" className={style.Num}>
+            <p className={style.title}>Call Us Today</p>
+            <p className={style.main}>+ 1 634 7638 654</p>
+          </div>
         </div>
-        <div className={style.Num}>
-          <p className={style.title}>Call Us Today</p>
-          <p className={style.main}>+ 1 634 7638 654</p>
-        </div>
+        <ProjectMain data-aos="fade-down" data={this.listProjects} />
+        <Footer />
       </div>
-      <ProjectMain data={listProjects} />
-      <Footer />
-    </div>
-  )
+    )
+  }
 }

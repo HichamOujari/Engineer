@@ -3,15 +3,19 @@ import style from '../../styles/About.module.css'
 import Link from "next/link"
 import SkillsCard from "./skillsCard"
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import AOS from "aos"
 
 export default class Contact_Skills extends Component {
+  componentDidMount(){
+    AOS.init({duration:2000});
+  }
   render() {
     return (
-      <div className={style.Contact_Skills}>
-        <div className={style.left}>
+      <div data-aos="fade-down" className={style.Contact_Skills}>
+        <div data-aos="fade-in" className={style.left}>
             <p className={style.title}>Appointment Form</p>
             <p className={style.sousTitle}>Request A Quote</p>
-            <form className={style.form}>
+            <form data-aos="fade-left" className={style.form}>
                 <input type="text" required name="name" placeholder="Name" />
                 <input type="email" required name="email" placeholder="Email" />
                 <input type="phone" required name="phone" placeholder="Phone" />
@@ -28,7 +32,7 @@ export default class Contact_Skills extends Component {
                 </div>
             </form>
         </div>
-        <div className={style.right}>
+        <div data-aos="fade-right" className={style.right}>
           {this.props.data.map((ele,index)=>{
             return (<SkillsCard data={ele} key={index} />)
           })}

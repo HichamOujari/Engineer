@@ -2,11 +2,16 @@ import React, { Component } from 'react';
 import style from '../../styles/About.module.css'
 import Link from "next/link"
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
+import AOS from "aos"
 
 export default class AboutMain extends Component {
+  componentDidMount(){
+    AOS.init({duration:2000});
+  }
+  
   render() {
     return (
-      <div className={style.AboutMain}>
+      <div data-aos="fade-down" className={style.AboutMain}>
           <div className={style.left}>
               <img src={this.props.data.image}  className={style.Image}/>
               <div className={style.BlocCount}>

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GoogleMapReact from 'google-map-react';
- 
+import AOS from "aos"
+
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
  
 class Maps extends Component {
@@ -11,10 +12,12 @@ class Maps extends Component {
     },
     zoom: 11
   };
- 
+  componentDidMount(){
+    AOS.init({duration:2000});
+  }
   render() {
     return (
-      <div style={{ height: '60vh', width: '100%' }}>
+      <div data-aos="fade-up" style={{ height: '60vh', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyAQ7fAoEXLz2QVQzYCkhEG_vz87i7WcKW4" }}
           defaultCenter={this.props.data.center}

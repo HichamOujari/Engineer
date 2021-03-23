@@ -1,0 +1,615 @@
+.HeaderProject{
+    width: 100%;
+    position: relative;
+    height: 70vh;
+    border: 1px solid transparent;
+    margin-top: 10px;
+}
+.HeaderProject>.Image{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+.HeaderProject>.Content{
+    background: rgba(245, 241, 241, 0.4);
+    height: 100%;
+    width: 100%;
+    border: 1px solid transparent;
+}
+.HeaderProject>.Content>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 84px;
+    width: 70%;
+    text-align: center;
+    /* identical to box height, or 105% */
+    color: #16213E;
+
+}
+.HeaderProject>.Content>.sousTitle{
+    font-family: Lato;
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    line-height: 28px;
+    /* identical to box height, or 165% */
+    color: #41444B;
+    margin-left: 25%;
+    margin-top: -40px;
+}
+
+.HeaderProject>.Num{
+    position: absolute;
+    background: white;
+    border-top: 4px solid #F45905;
+    bottom: 0;
+    right: 10%;
+    width: 25%;
+    min-width: 300px;
+    padding-left: 50px;
+    transform: translate(0,30px);
+    box-shadow: 2px 2px 10px rgb(195, 195, 233);
+}
+.HeaderProject>.Num>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    text-transform: uppercase;
+    color: #41444B;
+}
+.HeaderProject>.Num>.main{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+
+    /* identical to box height, or 120% */
+    color: #00215B;
+}
+.ProjectMain{
+    padding-left: 10%;
+    padding-right: 10%;
+    list-style: none;
+    margin-top: 80px;
+}
+
+.ProjectMain>li{
+    display: flex;
+    justify-content: center;
+}
+.ProjectMain>li:nth-child(odd){
+    background: #00215B;
+    flex-direction: row-reverse;
+}
+
+.ProjectMain>li:nth-child(even){
+    background: #F45905;   
+}
+.ProjectMain>li>.img{
+    width: 50%;
+    height: 60vh;
+}
+.ProjectMain>li>.Content{
+    width: 50%;
+    height: 40vh;
+}
+.ProjectCard{
+    padding-left: 50px;
+    display: flex;
+    padding-bottom: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
+.ProjectCard>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 38px;
+    /* identical to box height, or 112% */
+    
+    
+    color: #FFFFFF;
+}
+
+.ProjectCard>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    width: 100%;
+    color: #EBECEE;
+}
+.ProjectCard>.goFor{
+    background: white;
+    color: #F45905;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.3);
+    padding: 6px;
+    width: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 1s;
+    transform-origin: all;
+}
+.ProjectCard>.goFor:hover{
+    transform: scale(1.5);
+}
+.sliders_{
+    margin-top: 100px;
+}
+.sliders_>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    width: 60%;
+    text-align: center;
+    /* identical to box height, or 120% */
+    color: #00215B;   
+}
+.sliders{
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    flex-wrap: wrap;
+}
+.sliders>li{
+    width: 25%;
+    position: relative;
+    height: 70vh;
+}
+.sliders>li:nth-child(odd){
+   background-color:rgba(0, 33, 91, 0.85);
+}
+.sliders>li:nth-child(even){
+   background: rgba(244, 89, 5, 0.85);
+}
+.sliders>li>.Image{
+   position: absolute;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+}
+.sliders>li>.INFO{
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+}
+.sliders>li>.INFO>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    /* or 120% */
+    color: #FFFFFF;
+    
+}
+.sliders>li>.INFO>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    color: #EBECEE;
+}
+.sliders>li:nth-child(odd)>.INFO>.GoFor{
+    background-color: #F45905;
+}
+.sliders>li:nth-child(even)>.INFO>.GoFor{
+    background-color: #00215B;
+}
+.sliders>li>.INFO>.GoFor{
+   color: white;
+   padding: 3px;
+   transform: scale(1.6);
+   display: flex;
+   cursor: pointer;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   bottom: 40px;
+   right: 20px;
+   transition: 1s;
+   transform-origin: all;
+}
+
+.sliders>li>.INFO>.GoFor:hover{
+   transform: scale(1.9);
+}
+
+.GridsSection{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 100px;
+}
+.GridsSection>.top{
+
+}
+.GridsSection>.top>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    /* identical to box height, or 120% */
+    
+    color: #00215B;
+}
+.GridsSection>.top>.Ele{
+    display: flex;
+    list-style: none;
+}
+.GridsSection>.top>.Ele>li{ /*Grid4C*/
+    border-top: 4px solid #F45905;
+    margin-right: 20px;
+    box-shadow: 2px 2px 20px gray;
+    padding: 10px;
+    width: 23%;
+}
+.GridsSection>.top>.Ele>li>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    
+    text-transform: uppercase;
+    
+    color: #41444B;
+}
+.GridsSection>.top>.Ele>li>.sousTitle{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 26px;
+    /* or 118% */
+    
+    color: #16213E;
+}
+.GridsSection>.top>.Ele>li>.GoFor{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    color: #001ED3;
+    cursor: pointer;
+}
+
+
+.GridsSection>.bottom{
+    margin-top: 90px;
+
+}
+.GridsSection>.bottom>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    /* identical to box height, or 120% */
+    color: #00215B;
+}
+.GridsSection>.bottom>.Ele{
+    display: flex;
+    list-style: none;
+}
+.GridsSection>.bottom>.Ele>li{/*Grid3C*/
+    width: 32%;
+    margin-right: 30px;
+}
+.GridsSection>.bottom>.Ele>li>.Image{
+    width: 100%;
+    border-radius: 13px;
+    height: 60vh;
+}
+.GridsSection>.bottom>.Ele>li>.INFO{
+    
+}
+.GridsSection>.bottom>.Ele>li>.INFO>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 118% */
+    color: #00215B;
+}
+.GridsSection>.bottom>.Ele>li>.INFO>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 165% */
+    color: #41444B;
+}
+.GridsSection>.bottom>.Ele>li>.INFO>.GofOR{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    /* identical to box height, or 107% */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #001ED3;
+}
+.ImageContent{
+    margin-top: 60px;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    list-style: none;
+    justify-content: center;
+}
+.ImageContent>li{
+    width: 30%;
+    margin-right: 20px;
+    height: 70vh;
+    transition: 1s;
+    transform-origin: all;
+}
+.ImageContent>li>.Image{
+    width: 100%;
+    height: 100%;
+}
+.ImageContent>li:hover{
+    transform: scale(1.2);
+}
+.SingleServiceContent{
+    margin-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    margin-bottom: 90px;
+
+}
+.SingleServiceContent>.left{
+    width: 70%;
+    margin-right: 20px;
+}
+.SingleServiceContent>.left>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+    /* identical to box height, or 120% */
+    color: #00215B;
+    
+}
+.SingleServiceContent>.left>.content{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    max-width: 550px;
+    /* or 165% */
+    color: #41444B;
+}
+.SingleServiceContent>.left>.sousEle{
+
+}
+.TextCardDisplayer{
+    width: 90%;
+}
+.TextCardDisplayer>.Gtitle{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 26px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid rgb(196, 192, 192);
+    /* identical to box height, or 144% */
+    color: #16213E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.TextCardDisplayer>.Gtitle>.Title{
+
+}
+
+.TextCardDisplayer>.Gtitle>.Icon{
+    transform: scale(1.2);
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TextCardDisplayer>.Gtitle>.Title:hover,.TextCardDisplayer>.Gtitle>.Icon:hover{
+    cursor: pointer;
+    color: #F45905;
+}
+.TextCardDisplayer>.Content{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    margin-top: 30px;
+    max-width: 550px;
+    color: #41444B;
+}
+.SingleServiceContent>.right{
+    width: 30%;
+    margin-left: 10px;
+}
+.Single_Serv_Card{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    margin-top: 30px;
+}
+.Single_Serv_Card>.front{
+    background-color: #F45905;
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    z-index: -1;
+}
+.Single_Serv_Card>.front:hover{
+    cursor: pointer;
+    animation: 2s RotationCard both;
+}
+.Single_Serv_Card>.front>.icon{
+    border: 2px solid #00215B;
+    color: #00215B;
+    padding: 0px;
+    border-radius: 50%;
+    transform: scale(1.4);
+}
+.Single_Serv_Card>.front>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    /* or 112% */
+    
+    
+    color: #FFFFFF;
+}
+.Single_Serv_Card>.front>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    /* or 165% */
+    
+    
+    color: #EBECEE;
+}
+.Single_Serv_Card>.back{
+    height: 100%;
+    background: #00215B;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Single_Serv_Card>.back>.title{
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    /* or 112% */
+    color: #FFFFFF;
+}
+.Single_Serv_Card>.back>.desc{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 28px;
+    /* or 165% */
+    color: #EBECEE;
+}
+.Single_Serv_Card>.back>.Gofor{
+    color: white;
+    background: #F45905;
+    padding:5px;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:1053px){
+    .sliders>li{
+        width: 50%;
+    }
+}
+@media (max-width:948px){
+   .SingleServiceContent{
+        flex-direction: column-reverse;
+    }
+    .SingleServiceContent>.left{
+        width: 100%;
+    }
+    .SingleServiceContent>.left>.content{
+        max-width: 90%;
+    }
+    .SingleServiceContent>.right{
+        width: 50%;
+    }
+}
+@media (max-width:707px){
+    .GridsSection>.bottom>.Ele,.GridsSection>.top>.Ele{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0;
+    }
+    .GridsSection>.bottom>.Ele>li,.GridsSection>.top>.Ele>li{
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+@media (max-width:800px){
+    .ProjectMain>li,.ProjectMain>li:nth-child(odd){
+        flex-direction: column;
+    }
+    .ProjectMain>li>.img{
+        width: 100%;
+    }
+    .ProjectMain>li>.Content{
+        height: 100px;
+    }
+    .sliders>li{
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+@keyframes RotationCard{
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+        z-index: -1;
+    }
+  }
