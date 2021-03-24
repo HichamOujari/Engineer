@@ -488,9 +488,6 @@
     justify-content: space-evenly;
     z-index: -1;
 }
-.Single_Serv_Card>.front:hover{
-    cursor: pointer;
-}
 .Single_Serv_Card>.front>.icon{
     border: 2px solid #00215B;
     color: #00215B;
@@ -585,6 +582,14 @@
     .GridsSection>.bottom>.Ele>li,.GridsSection>.top>.Ele>li{
         width: 100%;
         margin-top: 40px;
+    }
+    .ImageContent{
+        flex-direction: column;
+    }
+    .ImageContent>li{
+        width: 100%;
+        margin-top: 20px;
+        height: 50vh;
     }
 }
 @media (max-width:800px){
