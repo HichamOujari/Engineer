@@ -4,10 +4,29 @@ import Nav from "../../component/nav"
 import Footer from "../../component/footer"
 import React,{Component} from "react"
 import AOS from "aos"
+import Grid4C from "../../component/Project/grid4C"
 import SingleServiceContent from "../../component/Project/singleServiceContent"
 
 
 export default class SingleServices extends Component {
+  //Other service 
+  GridInfo = [
+    {
+      title:"Petrolieum & Gas Refinery",
+      lien:"/services/single-service"
+    },{
+      title:"Renovation & Painting",
+      lien:"/services/single-service"
+    },{
+      title:"Home Repair & Design",
+      lien:"/services/single-service"
+    },{
+      title:"Mechanical Engineering",
+      lien:"/services/single-service"
+    }
+  ]
+
+  //SingleService => (id,title,text,images(id,image),elements(id,title,text))
   ImageContent = ["/service/singleService/1.png","/service/singleService/2.png","/service/singleService/3.png",]
   SingleServiceData = {
     title : "Petrolieum & Gas Refinery",
@@ -56,6 +75,16 @@ export default class SingleServices extends Component {
           })}
         </ul>
         <SingleServiceContent data-aos="fade-up" data={this.SingleServiceData} />
+        <div data-aos="fade-down" className={style.GridsSection}>
+          <div data-aos="fade-up" className={style.top}>
+              <p data-aos="fade-up" className={style.title}>Other Services</p>
+              <ul data-aos="fade-down" className={style.Ele}>
+                  {this.GridInfo.map((ele,index)=>{
+                      return (<Grid4C data-aos="fade-down"data={ele} key={index} />)
+                  })}
+              </ul>
+          </div>
+        </div>
         <Footer />
       </div>
     )
