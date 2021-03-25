@@ -14,15 +14,18 @@ export default function Home() {
   const headerData = [
     {
       image:"/home/header1.png",
-      title:"We Provide Best Industrial Services1",
+      title:"We Provide Best",
+      sousTitle:"Industrial Services1",
       lien:"/header1"
     },{
       image:"/home/header1.png",
-      title:"We Provide Best Industrial Services2",
+      title:"We Provide Best",
+      sousTitle:"Industrial Services2",
       lien:"/header1"
     },{
       image:"/home/header1.png",
-      title:"We Provide Best Industrial Services3",
+      title:"We Provide Best",
+      sousTitle:"Industrial Services3",
       lien:"/header1"
     }
   ]
@@ -120,14 +123,6 @@ export default function Home() {
       desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
       name:"Katy Grey 3",
       post:"CEO Grey Industries"
-    },{
-      desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
-      name:"Katy Grey 4",
-      post:"CEO Grey Industries"
-    },{
-      desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
-      name:"Katy Grey 5",
-      post:"CEO Grey Industries"
     }
   ]
   const MapsData = {
@@ -141,22 +136,42 @@ export default function Home() {
     desc : "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus risus nunc, ultrices sed aliquet sodales, eleifend at est. Orci varius natoque",
     News:[
       {
-        title:"Agile Construction Management Building",
+        title:"Agile Construction Management Building1",
         date:"20 Nov 2020",
         by:"Oujari Hicham",
         image:"/home/teams/1.png"
       },{
-        title:"Agile Construction Management Building",
+        title:"Agile Construction Management Building2",
         date:"20 Nov 2020",
         by:"Oujari Hicham",
         image:"/home/teams/1.png"
       },{
-        title:"Agile Construction Management Building",
+        title:"Agile Construction Management Building3",
         date:"20 Nov 2020",
         by:"Oujari Hicham",
         image:"/home/teams/1.png"
       },{
-        title:"Agile Construction Management Building",
+        title:"Agile Construction Management Building4",
+        date:"20 Nov 2020",
+        by:"Oujari Hicham",
+        image:"/home/teams/1.png"
+      },{
+        title:"Agile Construction Management Building5",
+        date:"20 Nov 2020",
+        by:"Oujari Hicham",
+        image:"/home/teams/1.png"
+      },{
+        title:"Agile Construction Management Building6",
+        date:"20 Nov 2020",
+        by:"Oujari Hicham",
+        image:"/home/teams/1.png"
+      },{
+        title:"Agile Construction Management Building7",
+        date:"20 Nov 2020",
+        by:"Oujari Hicham",
+        image:"/home/teams/1.png"
+      },{
+        title:"Agile Construction Management Building8",
         date:"20 Nov 2020",
         by:"Oujari Hicham",
         image:"/home/teams/1.png"

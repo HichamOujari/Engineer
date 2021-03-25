@@ -46,9 +46,14 @@
 }
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
+    align-items: center;
+}
+
+.nav>.logo{
+    width: 103px;
+    height: 28px;
 }
 
 .navBar{
@@ -322,7 +327,7 @@
     }
 }
 
-@media (max-width: 1103px){
+@media (max-width: 1240px){
     .navBar{
         display: none;
         flex-direction: column;
@@ -333,6 +338,10 @@
         width: 100%;
         border-top: 4px solid #00215B;
         padding-top: 10px;
+    }
+    .nav{
+        margin-bottom: 20px;
+        justify-content: space-between;
     }
     .navBar>li{
         margin-top: -10px;

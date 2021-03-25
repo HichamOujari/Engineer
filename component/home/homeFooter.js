@@ -5,6 +5,15 @@ import NewsCard from "./newsCard"
 
 
 export default class HomeFooter extends Component {
+    state={
+        idNews:0,
+        NewsData:this.props.data.News
+    }
+    ListNews = this.state.NewsData.map((ele,index)=>{
+        if(index>=this.state.idNews && index<this.state.idNews+3){
+            return <NewsCard data={ele} key={index}/>
+        }
+    })
   render() {
     return (
       <div  className={style.HomeFooter}>
@@ -36,10 +45,21 @@ export default class HomeFooter extends Component {
           <div className={style.right}>
               <p className={style.title}>Our News</p>
               <div className={style.News}>
-                  {this.props.data.News.map((ele,index)=>{
-                      return <NewsCard data={ele} key={index}/>
-                  })}
+                <NewsCard data={this.state.NewsData[this.state.idNews]}/>
+                <NewsCard data={this.state.NewsData[(this.state.idNews+1)%this.state.NewsData.length]}/>
+                <NewsCard data={this.state.NewsData[(this.state.idNews+2)%this.state.NewsData.length]}/>
               </div>
+              <ul className={style.bar}>
+                  {this.props.data.News.map((ele,index)=>{
+                      if(index%3==0){
+                          return (<li onClick={()=>{
+                            this.setState({
+                                idNews:index
+                            })
+                          }} key={index} ></li>)
+                      }
+                  })}
+              </ul>
           </div>
       </div>
     );

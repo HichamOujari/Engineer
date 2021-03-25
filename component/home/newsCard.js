@@ -10,8 +10,8 @@ export default class NewsCard extends Component {
           <div className={style.content}>
               <p className={style.title}>{this.props.data.title}</p>
               <div className={style.then}>
-                  <p>{this.props.data.date}</p>
-                  <p>{this.props.data.by}</p>
+                  <p className={style.date}>{this.props.data.date}</p>
+                  <p className={style.by}>{this.props.data.by}</p>
               </div>
           </div>
       </div>

@@ -61,7 +61,7 @@ export default class Nav extends Component {
                 </ul>
             </div>
             <div  className={style.nav}>
-                <Image data-aos="fade-up" className={style.logo} src={this.state.logo} width="103" height="28" />
+                <img data-aos="fade-up" className={style.logo} src={this.state.logo} />
                 <ul data-aos="fade-down"  id="NavBarElement" className={style.navBar}>
                     <Link href="/"><li><h3>Home</h3></li></Link>
                     <Link href="/about"><li><h3>About</h3></li></Link>
