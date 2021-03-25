@@ -590,14 +590,20 @@
     padding-left: 5%;
     padding-right: 5%;
     list-style: none;
-    display: grid;
-  	grid-template-columns: 2fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     grid-gap: 20px;
 }
 .GridProjectFilter>li{
     
 }
 
+.width30{
+    width: 30%;
+}
+.width70{
+    width: Calc(60% + 20px);
+}
 .ImageFilter{
     position: relative;
 }

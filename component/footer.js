@@ -40,8 +40,8 @@ export default class Footer extends Component {
       </>)
     }
     return (
-      <div data-aos="fade-down" className={style.Footer}>
-        <div data-aos="fade-up" className={style.left}>
+      <div className={style.Footer}>
+        <div  className={style.left}>
           <img data-aos="fade-down" className={style.logo} src="/logoWhite.png" />
           <p data-aos="fade-down" className={style.title}>CALL US TODAY</p>
           <p data-aos="fade-up" className={style.Number}>+ 1 634 7638 654</p>
@@ -53,9 +53,9 @@ export default class Footer extends Component {
           </ul>
           <p data-aos="fade-down" className={style.desc}>Fusce eu magna quis velit efficitur rhoncus. Vivamus vehicula, neque a velit</p>
         </div>
-        <div data-aos="fade-up" className={style.right}>
+        <div  className={style.right}>
           <div className={style.top}>
-            <div data-aos="fade-down" className={style.First}>
+            <div className={style.First}>
               <p className={style.title}>Quick Links</p>
               <Link href="/about"><p className={style.Ele}>About Company</p></Link>
               <Link href="/services"><p className={style.Ele}>Our Services</p></Link>
@@ -63,7 +63,7 @@ export default class Footer extends Component {
               <Link href="/price"><p className={style.Ele}>Princings</p></Link>
               <Link href="/about"><p className={style.Ele}>Contacts</p></Link>
             </div>
-            <div data-aos="fade-up" className={style.Second}>
+            <div className={style.Second}>
               <p className={style.title}>Clients Support</p>
               <Link href="/careers"><p className={style.Ele}>Careers</p></Link>
               <Link href="/process"><p className={style.Ele}>Our Process</p></Link>
@@ -71,7 +71,7 @@ export default class Footer extends Component {
               <Link href="/testimonial"><p className={style.Ele}>Clients Testimonials</p></Link>
               <Link href="/blog"><p className={style.Ele}>Our Blog</p></Link>
             </div>
-            <div data-aos="fade-down" className={style.third}>
+            <div className={style.third}>
               <Link href="/news"><p className={style.title}>Our News</p></Link>
               {listNews(0)}
               <ul className={style.dot}>
@@ -81,7 +81,7 @@ export default class Footer extends Component {
             </div>
             
           </div>
-          <p data-aos="fade-down" className={style.bottom}>Merkulove © Dustro Template All rights reserved Copyrights 2020</p>
+          <p  className={style.bottom}>Merkulove © Dustro Template All rights reserved Copyrights 2020</p>
         </div>
       </div>
     );

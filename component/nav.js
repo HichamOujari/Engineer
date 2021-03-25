@@ -21,25 +21,13 @@ export default class Nav extends Component {
                 href:"/services/single-service/S1"
             },
         ],
-        pages: [
+        project: [
             {
                 title:"Projects List",
                 href:"/services/projects"
             },{
-                title:"dropDown pages 2",
-                href:"/services/projects"
-            },
-        ],
-        news:[
-            {
-                title:"dropDown news 1",
-                href:"/news/S1"
-            },{
-                title:"dropDown news 1",
-                href:"/news/S1"
-            },{
-                title:"dropDown news 1",
-                href:"/news/S1"
+                title:"Projects filter",
+                href:"/services/projects-filter"
             },
         ],
     }
@@ -76,9 +64,9 @@ export default class Nav extends Component {
                 <Image data-aos="fade-up" className={style.logo} src={this.state.logo} width="103" height="28" />
                 <ul data-aos="fade-down"  id="NavBarElement" className={style.navBar}>
                     <Link href="/"><li><h3>Home</h3></li></Link>
+                    <Link href="/about"><li><h3>About</h3></li></Link>
                     <Link href="/services"><li><DropDown title="Services" data={this.navElements.service} /></li></Link>
-                    <Link href="/pages"><li><DropDown title="Pages" data={this.navElements.pages} /></li></Link>
-                    <Link href="/news"><li><DropDown title="News" data={this.navElements.news} /></li></Link>
+                    <Link href="/pages"><li><DropDown title="Projects" data={this.navElements.project} /></li></Link>
                     <Link href="/about"><li><h3>Contacts</h3></li></Link>
                 </ul>
                 <label className={style.IconMenu} htmlFor="CHeckMenu"><MenuIcon/></label>

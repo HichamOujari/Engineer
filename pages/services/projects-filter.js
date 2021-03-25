@@ -94,7 +94,11 @@ export default class SingleServices extends Component {
         <ul data-aos="fade-up" className={style.GridProjectFilter} >
             {this.ImageContent.Images.map((ele,index)=>{
                 if(this.state.typeAffiche==0 || this.ImageContent.type[this.state.typeAffiche]==ele.type){
-                    return (<li key={index} ><ImageFilter id={index} data={ele} /></li>)
+                    if(index==0 || index==this.ImageContent.Images.length-1){
+                        return (<li key={index} className={style.width70} ><ImageFilter id={index} data={ele} /></li>)
+                    }else{
+                        return (<li key={index} className={style.width30}><ImageFilter id={index} data={ele} /></li>)
+                    }
                 }
             })}
         </ul>
