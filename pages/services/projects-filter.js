@@ -84,17 +84,25 @@ export default class SingleServices extends Component {
         </div>
         <ul data-aos="fade-down" className={style.TypesOfImages}>
           {this.ImageContent.type.map((ele,index)=>{
-            return (<li onClick={()=>{
-                this.setState({
-                    typeAffiche:index
-                })
-            }} key={index}>{ele}</li>)
+              if(this.state.typeAffiche==index){
+                return (<li className={style.active} onClick={()=>{
+                    this.setState({
+                        typeAffiche:index
+                    })
+                }} key={index}>{ele}</li>)   
+              }else{
+                return (<li onClick={()=>{
+                    this.setState({
+                        typeAffiche:index
+                    })
+                }} key={index}>{ele}</li>)
+              }
           })}
         </ul>
         <ul data-aos="fade-up" className={style.GridProjectFilter} >
             {this.ImageContent.Images.map((ele,index)=>{
                 if(this.state.typeAffiche==0 || this.ImageContent.type[this.state.typeAffiche]==ele.type){
-                    if(index==0 || index==this.ImageContent.Images.length-1){
+                    if((index==0 || index==this.ImageContent.Images.length-1) && this.state.typeAffiche==0){
                         return (<li key={index} className={style.width70} ><ImageFilter id={index} data={ele} /></li>)
                     }else{
                         return (<li key={index} className={style.width30}><ImageFilter id={index} data={ele} /></li>)

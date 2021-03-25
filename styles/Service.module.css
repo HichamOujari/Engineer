@@ -568,6 +568,7 @@
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
+    text-transform: capitalize;
     /* identical to box height, or 118% */
     text-align: center;
     margin-left: 15px;
@@ -687,6 +688,29 @@
         width: 50%;
     }
 }
+@media (max-width:800px){
+    .ProjectMain>li,.ProjectMain>li:nth-child(odd){
+        flex-direction: column;
+    }
+    .ProjectMain>li>.img{
+        width: 100%;
+    }
+    .ProjectMain>li>.Content{
+        height: 100px;
+    }
+    .sliders>li{
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media (max-width:755px){
+    .GridProjectFilter{
+        flex-direction: column;
+    }
+    .width30,.width70{
+        width: 100%;
+    }
+}
 @media (max-width:707px){
     .GridsSection>.bottom>.Ele,.GridsSection>.top>.Ele{
         flex-direction: column;
@@ -703,21 +727,6 @@
     .ImageContent>li{
         width: 100%;
         margin-top: 20px;
-        height: 50vh;
-    }
-}
-@media (max-width:800px){
-    .ProjectMain>li,.ProjectMain>li:nth-child(odd){
-        flex-direction: column;
-    }
-    .ProjectMain>li>.img{
-        width: 100%;
-    }
-    .ProjectMain>li>.Content{
-        height: 100px;
-    }
-    .sliders>li{
-        width: 100%;
         height: 50vh;
     }
 }
