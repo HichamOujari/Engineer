@@ -37,7 +37,7 @@ export default function About() {
     ]
   }
   const company = {
-    images:["/about/gallery/1.png","/about/gallery/1.png","/about/gallery/1.png","/about/gallery/1.png"],
+    images:["/about/gallery/1.png","/about/gallery/2.png","/about/gallery/3.png","/about/gallery/2.png"],
     title:"Develop your leaders into a competitive advantage",
     desc:"Nunc a blandit urna. Aliquam dapibus pellentesque purus, porta luctus tortor porta ut. Fusce mattis lacus feugiat libero vulputate, nec fringilla felis ultricies. Proin neque libero, tempus sed nisi vel, suscipit maximus elit. Aenean pulvinar vestibulum porttitor",
     lien:"/company"
@@ -57,7 +57,7 @@ export default function About() {
       icon:"/about/icons/tourn.png"
     },
   ]
-  const gallery = ["/about/gallery/1.png","/about/gallery/2.png","/about/gallery/1.png","/about/gallery/2.png","/about/gallery/1.png"]
+  const gallery = ["/about/gallery/1.png","/about/gallery/2.png","/about/gallery/1.png","/about/gallery/3.png","/about/gallery/1.png"]
 
   const services=["Service1","Service2","Service3","Service4"]
   return (

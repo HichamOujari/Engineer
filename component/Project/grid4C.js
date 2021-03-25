@@ -10,9 +10,9 @@ export default class Grid4C extends Component {
   }
   render() {
     return (
-      <li data-aos="fade-down" className={style.Grid4C}>
-          <p data-aos="fade-up" className={style.title}>Explore Service</p>
-          <p data-aos="fade-down" className={style.sousTitle}>{this.props.data.title}</p>
+      <li className={style.Grid4C}>
+          <p  className={style.title}>Explore Service</p>
+          <p className={style.sousTitle}>{this.props.data.title}</p>
           <Link href={this.props.data.lien}><p className={style.GoFor} >READ <ArrowRightAltIcon /></p></Link>
       </li>
     );

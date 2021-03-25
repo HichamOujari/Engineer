@@ -8,9 +8,9 @@ export default class Gallery extends Component {
   }
   render() {
     return (
-      <ul data-aos="fade-down" className={style.Gallery}>
+      <ul className={style.Gallery}>
           {this.props.data.map((ele,index)=>{
-              return (<li><img  data-aos="fade-up" className={style.img}  src={ele} key={index} /></li>)
+              return (<li key={index} ><img   className={style.img}  src={ele} /></li>)
           })}
       </ul>
     );

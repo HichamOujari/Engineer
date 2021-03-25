@@ -21,7 +21,7 @@ export default class Service extends Component {
               <p className={style.desc}>Cras tincidunt tellus at mi tristique rhoncus. Etiam dapibus rutrum leo consectetur accumsan. Vivamus viverra ante turpis, dignissim condimentum elit egestas sit amet. Phasellus faucibus pellentesque</p>
               <Link href="/services"><ArrowRightAltIcon className={style.goFor} /></Link>
           </div>
-          <div data-aos="fade-up" className={style.right}>
+          <div className={style.right}>
               {listService}
           </div>
       </div>

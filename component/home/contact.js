@@ -34,7 +34,7 @@ export default class Contact extends Component {
           <div className={style.right}>
               <p className={style.title}>Appointment Form</p>
               <p className={style.sousTitle}>Request A Quote</p>
-              <form data-aos="zoom-down" className={style.form}>
+              <form  className={style.form}>
                   <input type="text" required name="name" placeholder="Name" />
                   <input type="email" required name="email" placeholder="Email" />
                   <input type="phone" required name="phone" placeholder="Phone" />

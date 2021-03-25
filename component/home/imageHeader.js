@@ -12,7 +12,7 @@ export default class ImageHeader extends Component {
   render() {
     return (
         <div data-aos="flip-in" className={style.ImageHeader} id={"HeaderImage"+this.props.index}>
-            <Image src={this.props.data.image} layout='fill' className={style.Image} />
+            <img src={this.props.data.image} className={style.Image} />
             <div className={style.content}>
                 <h3 className={style.title}>{this.props.data.title}</h3>
                 <Link href={this.props.data.lien}><p className={style.goFor}>Learn more <span><ArrowRightAltIcon/></span></p></Link>

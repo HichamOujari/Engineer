@@ -9,10 +9,10 @@ export default class ProjectMain extends Component {
   }
   render() {
     return (
-      <ul data-aos="fade-up" className={style.ProjectMain}>
+      <ul className={style.ProjectMain}>
           {this.props.data.map((ele,index)=>{
-              return (<li data-aos="fade-down" key={index}>
-                  <img data-aos="fade-up" className={style.img} src={ele.image} />
+              return (<li key={index}>
+                  <img className={style.img} src={ele.image} />
                   <ProjectCard data-aos="fade-down" className={style.Content} data={ele} />
               </li>)
           })}

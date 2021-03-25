@@ -11,11 +11,11 @@ export default class Grid3C extends Component {
   
   render() {
     return (
-      <li data-aos="fade-down" className={style.Grid3C} >
-          <img data-aos="fade-up" src={this.props.data.image} className={style.Image} />
-          <div data-aos="fade-down" className={style.INFO}>
-              <p data-aos="fade-down" className={style.title}>{this.props.data.title}</p>
-              <p data-aos="fade-up" className={style.desc}>{this.props.data.desc}</p>
+      <li className={style.Grid3C} >
+          <img  src={this.props.data.image} className={style.Image} />
+          <div  className={style.INFO}>
+              <p  className={style.title}>{this.props.data.title}</p>
+              <p  className={style.desc}>{this.props.data.desc}</p>
               <Link href={this.props.data.lien}><p className={style.GofOR}>READ <ArrowRightAltIcon /></p></Link>
           </div>
       </li>

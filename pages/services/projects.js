@@ -7,7 +7,7 @@ import ProjectMain from "../../component/Project/projectMain"
 import AOS from "aos"
 
 export default class projects extends Component {
-
+  // Projects => (id,title,desc,image)
   listProjects = [
     {
       image:"/service/listProject/1.png",

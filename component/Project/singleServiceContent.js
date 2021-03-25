@@ -10,13 +10,13 @@ export default class SingleServiceContent extends Component {
   }
   render() {
     return (
-      <div data-aos="fade-down" className={style.SingleServiceContent}>
-          <div data-aos="fade-in" className={style.left}>
+      <div className={style.SingleServiceContent}>
+          <div  className={style.left}>
               <p data-aos="fade-up" className={style.title}>{this.props.data.title}</p>
-              <div data-aos="fade-down" className={style.content}>{this.props.data.text}</div>
-              <div data-aos="fade-down" className={style.sousEle}>
+              <div className={style.content}>{this.props.data.text}</div>
+              <div  className={style.sousEle}>
                   {this.props.data.elements.map((ele,index)=>{
-                      return <TextCardDisplayer data-aos="fade-down" data={ele} id={index} key={index} />
+                      return <TextCardDisplayer data={ele} id={index} key={index} />
                   })}
               </div>
           </div>

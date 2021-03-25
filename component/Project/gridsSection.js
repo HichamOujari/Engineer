@@ -10,20 +10,20 @@ export default class GridsSection extends Component {
   }
   render() {
     return (
-      <div data-aos="fade-down" className={style.GridsSection}>
+      <div className={style.GridsSection}>
           <div data-aos="fade-up" className={style.top}>
               <p data-aos="fade-up" className={style.title}>Services Grid 4 Columns</p>
-              <ul data-aos="fade-down" className={style.Ele}>
+              <ul className={style.Ele}>
                   {this.props.data.first.map((ele,index)=>{
-                      return (<Grid4C data-aos="fade-down"data={ele} key={index} />)
+                      return (<Grid4C data={ele} key={index} />)
                   })}
               </ul>
           </div>
-          <div data-aos="fade-down" className={style.bottom}>
-                <p data-aos="fade-down" className={style.title}>Services Grid 3 Columns</p>
-                <ul data-aos="fade-up" className={style.Ele}>
+          <div className={style.bottom}>
+                <p className={style.title}>Services Grid 3 Columns</p>
+                <ul className={style.Ele}>
                     {this.props.data.second.map((ele,index)=>{
-                        return (<Grid3C data-aos="fade-down"  data={ele} key={index} />)
+                        return (<Grid3C  data={ele} key={index} />)
                     })}
                 </ul>
           </div>

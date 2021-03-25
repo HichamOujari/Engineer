@@ -81,17 +81,16 @@
 
 .AboutMain{
     width: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
     display: flex;
     justify-content: space-evenly;
     margin-top: 80px;
+    margin-right: 0;
 
 }
 .AboutMain>.left{
     position: relative;
     width: 30%;
-    margin-right: 30px;
+    margin-right: 10px;
     height: 400px;
 }
 .AboutMain>.left>.Image{
@@ -136,6 +135,8 @@
 
 .AboutMain>.right{
     width: 60%;
+    padding: 0;
+    margin-right: 0;
 }
 .AboutMain>.right>.title{
     font-family: Kanit;
@@ -172,7 +173,9 @@
 
 }
 .AboutMain>.right>.quote>.Content{
-    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     margin-left: 20px;
 }
 .AboutMain>.right>.quote>.Content>.main{

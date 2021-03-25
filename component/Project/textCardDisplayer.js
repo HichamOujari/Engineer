@@ -14,8 +14,8 @@ export default class TextCardDisplayer extends Component {
   isOpened = 0
     render() {
     return (
-      <div data-aos="fade-down" className={style.TextCardDisplayer}>
-          <div data-aos="fade-up" className={style.Gtitle}>
+      <div className={style.TextCardDisplayer}>
+          <div className={style.Gtitle}>
               <p data-aos="fade-up" className={style.Title}>{this.props.data.title}</p>
               <p data-aos="fade-down" onClick={()=>{
                 const status = this.isOpened%2==1?"none":"block"

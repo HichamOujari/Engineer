@@ -10,9 +10,9 @@ export default class ProjectComp extends Component {
   }
   render() {
     return (
-      <div data-aos="fade-down" className={style.ProjectComp}>
-          <h3 data-aos="fade-up" className={style.title}>{this.props.data.title}</h3>
-          <p data-aos="fade-down" className={style.desc}>{this.props.data.desc}</p>
+      <div className={style.ProjectComp}>
+          <h3  className={style.title}>{this.props.data.title}</h3>
+          <p className={style.desc}>{this.props.data.desc}</p>
           <Link href={this.props.data.lien}><ArrowRightAltIcon className={style.goFor}/></Link>
       </div>
     );

@@ -12,8 +12,8 @@ export default class Team extends Component {
           return (<li key={index}><TeamCard data-aos="fade-down" data={ele}/></li>)
       })
     return (
-      <div data-aos="fade-down" className={style.team_}>
-            <div data-aos="fade-in" className={style.Team}>
+      <div className={style.team_}>
+            <div className={style.Team}>
                 <p data-aos="fade-left" className={style.title}>OUR TEAM</p>
                 <p data-aos="fade-right" className={style.sousTitle}>BestProfessionals</p>
                 <ul data-aos="fade-down" className={style.Listteam}>

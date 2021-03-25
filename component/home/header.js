@@ -23,7 +23,7 @@ export default class Header extends Component {
     return (
         <div data-aos="fade-down" className={style.header}>
             {listImage}
-            <ul data-aos="fade-left" className={style.dotes}>
+            <ul className={style.dotes}>
                 {listDote}
             </ul>
         </div>

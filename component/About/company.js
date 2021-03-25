@@ -8,7 +8,12 @@ import AOS from "aos"
 export default class Company extends Component {
   componentDidMount(){
     AOS.init({duration:2000});
-  }render() {
+  }
+  
+  state = {
+    Image:this.props.data.images[0]
+  }
+  render() {
     return (
       <div data-aos="fade-up" className={style.Company}>
           <div data-aos="fade-down" className={style.left}>
@@ -17,15 +22,17 @@ export default class Company extends Component {
               <p className={style.desc}>{this.props.data.desc}</p>
               <Link href={this.props.data.lien}><p className={style.goFor}>Learn more <ArrowRightAltIcon /></p></Link>
           </div>
-          <div data-aos="fade-left" className={style.right}>
+          <div  className={style.right}>
               <div className={style.images}>
-                  {this.props.data.images.map((ele,index)=>{
-                      return (<img src={ele} className={style.img} key={index} />)
-                  })}
+              <img id={"ImageGallery"} src={this.state.Image} className={style.img}  />
               </div>
               <ul className={style.doted}>
                   {this.props.data.images.map((ele,index)=>{
-                      return (<li key={index} ></li>)
+                      return (<li onClick={()=>{
+                        this.setState({
+                          Image:this.props.data.images[index]
+                        })
+                      }} key={index} ></li>)
                   })}
               </ul>
           </div>

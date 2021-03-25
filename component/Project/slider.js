@@ -11,11 +11,11 @@ export default class Slider extends Component {
   }
   render() {
     return (
-      <li data-aos="fade-down" className={style.Slider}>
-          <img data-aos="fade-up" src={this.props.data.image} className={style.Image} />
+      <li className={style.Slider}>
+          <img src={this.props.data.image} className={style.Image} />
           <div data-aos="fade-down" className={style.INFO}>
-              <p data-aos="fade-up"className={style.title} >{this.props.data.title}</p>
-              <p data-aos="fade-down"className={style.desc} >{this.props.data.desc}</p>
+              <p className={style.title} >{this.props.data.title}</p>
+              <p className={style.desc} >{this.props.data.desc}</p>
               <Link href={this.props.data.lien}><ArrowRightAltIcon className={style.GoFor} /></Link>
           </div>
       </li>

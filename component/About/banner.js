@@ -11,7 +11,7 @@ export default class Banner extends Component {
   
   render() {
     return (
-      <div data-aos="fade-left" className={style.Banner}>
+      <div className={style.Banner}>
           <div className={style.content}>
               <p className={style.title}>Get a Quote</p>
               <p className={style.sousTitle}>Build Your Future Today</p>
@@ -27,7 +27,7 @@ export default class Banner extends Component {
                       <p className={style.desc}>{this.props.data.sousComp[0].desc}</p>
                   </div>
               </div>
-              <div data-aos="fade-right" className={style.Service}>
+              <div  className={style.Service}>
                   <p className={style.left}>02</p>
                   <div className={style.right}>
                       <p className={style.title}>{this.props.data.sousComp[1].title}</p>

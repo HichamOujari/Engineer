@@ -110,15 +110,23 @@ export default function Home() {
   const TestimonialsInfos = [
     {
       desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
-      name:"Katy Grey ",
+      name:"Katy Grey 1",
       post:"CEO Grey Industries"
     },{
       desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
-      name:"Katy Grey ",
+      name:"Katy Grey 2",
       post:"CEO Grey Industries"
     },{
       desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
-      name:"Katy Grey ",
+      name:"Katy Grey 3",
+      post:"CEO Grey Industries"
+    },{
+      desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
+      name:"Katy Grey 4",
+      post:"CEO Grey Industries"
+    },{
+      desc: "Suspendisse tortor enim, varius et porttitor sit amet, posuere vitae massa. Proin ac quam eu erat semper sagi",
+      name:"Katy Grey 5",
       post:"CEO Grey Industries"
     }
   ]
