@@ -561,6 +561,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 130px;
+    flex-wrap: wrap;
 }
 .TypesOfImages>li{
     font-family: Kanit;
@@ -568,6 +569,7 @@
     font-weight: normal;
     font-size: 22px;
     line-height: 26px;
+    margin-top: 10px;
     text-transform: capitalize;
     /* identical to box height, or 118% */
     text-align: center;
@@ -594,6 +596,8 @@
     display: flex;
     flex-wrap: wrap;
     grid-gap: 20px;
+    justify-content: center;
+    overflow: hidden;
 }
 .GridProjectFilter>li{
     
